@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+        <name>Annotator</name>
+        <author>Lenny Cartier</author>
+        <creationDate>December 25th, 2013</creationDate>
+        <copyright>Datanotes</copyright>
+        <license>GNU General Public License</license>
+        <authorEmail>lenny@datanotes.org</authorEmail>
+        <authorUrl>http://www.datanotes.org</authorUrl>
+        <version>0.0.1</version>
+        <description>Plugin designed to embed Annotator JS and CSS files from the Annotator project (OKFN Labs - http://okfnlabs.org/annotator/). Be sure to activate and configure the plugin.</description>
+        <files>
+                <filename plugin="annotator">annotator.php</filename>
+                <filename>index.html</filename>
+                <folder>annotator</folder>
+        </files>
+        <config>
+                <fields name="params">
+                        <fieldset name="basic">
+                                <field name="basic-settings" type="spacer" default="" label="&lt;b&gt;Basic settings&lt;/b&gt;" description="Basic settings" />
+                                <field name="annotate-class" type="text" default="" label="Css class to annotate" description="Defines on which CSS class to use the annotate plugin." />
+                                <field name="annotate-source" type="radio" default="local" label="Source selection" description="Choose the annotate.js source">
+                                        <option value="local">Your website (local)</option>
+                                        <option value="remote">OKFN Labs website (remote)</option>
+                                </field> 
+                                <field name="advanced-settings" type="spacer" default="" label="&lt;b&gt;Advanced settings&lt;/b&gt;" description="Advanced settings" />
+                                <field name="annotate-version" type="list" default="1.2.7" description="Select Annotate release" label="Version">
+                                        <option value="1.2.7">1.2.7</option>
+                                        <option value="1.2.6">1.2.6</option>
+                                        <option value="1.2.5">1.2.5</option>
+                                        <option value="1.2.4">1.2.4</option>
+                                </field>
+                                <field name="minified-js" type="checkbox" value="1" default="0" label="Use the minified JS" description="Use the minified Javascript for Annotator" />
+                                <field name="minified-css" type="checkbox" value="1" default="0" label="Use the minified CSS" description="Use the minified CSS for Annotator" />
+                        </fieldset>
+                </fields>
+        </config>
+</extension>
