@@ -22,7 +22,8 @@
                                 <field name="annotate-source" type="radio" default="local" label="Source selection" description="Choose the annotate.js source">
                                         <option value="local">Your website (local)</option>
                                         <option value="remote">OKFN Labs website (remote)</option>
-                                </field> 
+                                </field>
+ 								<field name="loadallplugins" type="checkbox" value="1" default="0" label="Load all plugins" description="Load all available plugins. You will need an account on annotateit.org or an access to an annotation store." />
                                 <field name="advanced-settings" type="spacer" default="" label="&lt;b&gt;Advanced settings&lt;/b&gt;" description="Advanced settings" />
                                 <field name="annotate-version" type="list" default="1.2.7" description="Select Annotate release" label="Version">
                                         <option value="1.2.7">1.2.7</option>

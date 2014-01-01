@@ -17,6 +17,9 @@ class plgContentAnnotator extends JPlugin
 		// build local/remote url
 		if ( $this->params->get('annotate-source') == 'local') { $source = "/plugins/content/annotator/annotator/v"; } else { $source = "http://assets.annotateit.org/annotator/v"; }
 		
+		// check annotator options
+		if ( $this->params->get('loadallplugins') == '1') { $options = ".annotator('setupPlugins')"; }
+		
 		// call js & css		
 	    if ( $this->params->get('minified-js') == '1' ) { 
 	    $document->addScript($source.$this->params->get('annotate-version') ."/annotator-full.min.js"); 
@@ -27,7 +30,7 @@ class plgContentAnnotator extends JPlugin
 	    	} else { $document->addStyleSheet($source.$this->params->get('annotate-version') ."/annotator.css"); }
 	    
 		// call annotator	
-		$javascript = "<div><script type=\"text/javascript\"> jQuery(function ($) { $('#". $this->params->get('annotate-class') ."').annotator().annotator('setupPlugins'); }); </script></div>";
+		$javascript = "<div><script type=\"text/javascript\"> jQuery(function ($) { $('#". $this->params->get('annotate-class') ."').annotator()$options; }); </script></div>";
 		return $javascript;
 		
 		}
