@@ -23,16 +23,18 @@
                                         <option value="local">Your website (local)</option>
                                         <option value="remote">OKFN Labs website (remote)</option>
                                 </field>
- 								<field name="loadallplugins" type="checkbox" value="1" default="0" label="Load all plugins" description="Load all available plugins. You will need an account on annotateit.org or an access to an annotation store." />
-                                <field name="advanced-settings" type="spacer" default="" label="&lt;b&gt;Advanced settings&lt;/b&gt;" description="Advanced settings" />
-                                <field name="annotate-version" type="list" default="1.2.7" description="Select Annotate release" label="Version">
+ 				<field name="annotate-version" type="list" default="1.2.7" description="Select Annotate release" label="Version">
                                         <option value="1.2.7">1.2.7</option>
                                         <option value="1.2.6">1.2.6</option>
                                         <option value="1.2.5">1.2.5</option>
                                         <option value="1.2.4">1.2.4</option>
                                 </field>
-                                <field name="minified-js" type="checkbox" value="1" default="0" label="Use the minified JS" description="Use the minified Javascript for Annotator" />
-                                <field name="minified-css" type="checkbox" value="1" default="0" label="Use the minified CSS" description="Use the minified CSS for Annotator" />
+                                <field name="minified-js" type="checkbox" value="1" default="0" label="Use the minified JS" description="Use the minified Javascript for Annotator." />
+                                <field name="minified-css" type="checkbox" value="1" default="0" label="Use the minified CSS" description="Use the minified CSS for Annotator." />
+                                <field name="advanced-settings" type="spacer" default="" label="&lt;b&gt;Advanced settings&lt;/b&gt;" description="Advanced settings." />
+                                        <field name="loadallplugins" type="checkbox" value="1" default="0" label="Load all plugins" description="Load all available plugins. You will need an account on annotateit.org or an access to an annotation store." />
+                                        <field name="accountid" type="text" default="" label="Account ID" description="Accound ID defined when you registered on your annotation store." />
+                                        <field name="authtoken" type="text" default="" label="Auth token" description="Authentication token received after registration on your annotation store." />
                         </fieldset>
                 </fields>
         </config>
