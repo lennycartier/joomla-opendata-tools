@@ -511,7 +511,7 @@ class K2ModelItem extends K2Model
 			$path = $params->get('attachmentsFolder', NULL);
 			if (is_null($path))
 			{
-				$savepath = JPATH_ROOT.DS.'media'.DS.'k2'.DS.'attachments';
+				$savepath = JPATH_ROOT.DS.'media'.DS.'k2'.DS.'storage'.DS.$row->id; /* individual per id-item files storage (lenny) */
 			}
 			else
 			{
@@ -1107,7 +1107,7 @@ class K2ModelItem extends K2Model
 		$path = $params->get('attachmentsFolder', NULL);
 		if (is_null($path))
 		{
-			$savepath = JPATH_ROOT.DS.'media'.DS.'k2'.DS.'attachments';
+			$savepath = JPATH_ROOT.DS.'media'.DS.'k2'.DS.'storage'.DS.$row->id; /* individual per id-item files storage (lenny) */
 		}
 		else
 		{
@@ -1190,7 +1190,7 @@ class K2ModelItem extends K2Model
 		$path = $params->get('attachmentsFolder', NULL);
 		if (is_null($path))
 		{
-			$savepath = JPATH_ROOT.DS.'media'.DS.'k2'.DS.'attachments';
+			$savepath = JPATH_ROOT.DS.'media'.DS.'k2'.DS.'storage'.DS.$row->id; /* individual per id-item files storage (lenny) */
 		}
 		else
 		{
