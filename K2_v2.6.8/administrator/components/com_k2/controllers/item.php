@@ -111,5 +111,10 @@ class K2ControllerItem extends K2Controller
 		$model->resetRating();
 
 	}
-
+	function identify() /* file identification (lenny) */
+		{
+			$model = $this->getModel('item');
+			$model->identify();
+		}
+	
 }
