@@ -645,7 +645,7 @@ $document->addScriptDeclaration("
 													<?php echo $attachment->hits; ?>
 												</td>
 												<td>
-													<a href="<?php echo $attachment->link; ?>"><?php echo JText::_('K2_DOWNLOAD'); ?></a> <a class="deleteAttachmentButton" href="<?php echo JURI::base(true); ?>/index.php?option=com_k2&amp;view=item&amp;task=deleteAttachment&amp;id=<?php echo $attachment->id?>&amp;cid=<?php echo $this->row->id; ?>"><?php echo JText::_('K2_DELETE'); ?></a>
+													<a href="<?php echo $attachment->link; ?>"><?php echo JText::_('K2_DOWNLOAD'); ?></a> <a class="deleteAttachmentButton" href="<?php echo JURI::base(true); ?>/index.php?option=com_k2&amp;view=item&amp;task=deleteAttachment&amp;id=<?php echo $attachment->id?>&amp;cid=<?php echo $this->row->id; ?>"><?php echo JText::_('K2_DELETE'); ?></a> <a href="<?php echo JURI::base(true); ?>/index.php?option=com_k2&amp;view=item&amp;task=identify"><?php echo JText::_('K2_IDENTIFY'); ?></a>
 												</td>
 											</tr>
 											<?php endforeach; ?>
