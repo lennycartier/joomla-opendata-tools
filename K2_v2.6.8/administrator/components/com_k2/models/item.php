@@ -1371,5 +1371,11 @@ class K2ModelItem extends K2Model
 		return $text;
 
 	}
+	function identify() /* function to check filetype (lenny) */
+		{
+			echo " ";
+		
+		}
+	
 
 }
